@@ -6,7 +6,7 @@ application.use(express.static(__dirname + '/'));
 
 application.get('/addNum', (req, res)=>{
     let n1 = req.query.n1;
-    let n2 = req.query.n1;
+    let n2 = req.query.n2;
     let sum = parseInt(n1) + parseInt(n2);
     let successMessage = {statusCode:200, message:'Success', data:sum}
     res.send(successMessage)
